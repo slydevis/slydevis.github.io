@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -40,100 +40,169 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Michon Bruno</a>
+          <a class="navbar-brand scrollTo" href="#top">Michon Bruno</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a class="scrollTo" href="#top">Accueil</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a id="test2" href="#top">Portofolio</a></li>
+            <li class="active"><a id="acceuil" class="scrollTo" href="#top">Accueil</a></li>
+            <li><a id="service-menu" class='scrollTo' href="#top">Service</a></li>
+            <li><a id="portofolio-menu" class='scrollTo' href="#top">Portofolio</a></li>
             <li><a class="scrollTo" href="#contact">Contact</a></li>
-            <!-- <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li> -->
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </div>
 
-    
-       
-    <div class="container theme-showcase" role="main">
-    <div class="part majusculeEnorme centrer cameleon1"><span class="title">MichonB</span></div>    
-    <div id="test" class="part scrollTo">
-          <center><h1 style="color:red">Danger !!!</h1>
-          <!-- <img src="http://www.theaveragegamer.com/wp-content/uploads/2014/03/South-Park-Stick-of-Truth-Mr-Hankey.png"/></center> -->
-    </div>
-        
+    <div class="container theme-showcase ui-content" role="main">
 
-  <div class="part">
-        <div class="page-header">
-          <h1>Alerts</h1>
+      <noscript>
+        <div class='centrer part' style='padding-top:20%;padding-bottom:20%;'>
+          <p>
+            Le JavaScript est désactivé veuillez l'activé puis réactualisez la page pour une meilleur utilisation plus agréable du site !
+          </p>
         </div>
-        <div class="alert alert-success" id="page-1">
-          <strong>Well done!</strong> You successfully read this important alert message.
+      </noscript>
+
+      <div class="part majusculeEnorme centrer cameleon1"><span class="title">MichonB</span></div>    
+      <div id="portofolio" class="part scrollTo cameleon2">
+   
+  <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/img.jpg" data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Example headline.</h1>
+              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+            </div>
+          </div>
         </div>
-        <div class="alert alert-info">
-          <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+        <div class="item">
+          <img src="img/img2.jpg" data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
         </div>
-        <div class="alert alert-warning">
-          <strong>Warning!</strong> Best check yo self, you're not looking too good.
+        <div class="item">
+          <img src="img/img3.jpg" data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more for good measure.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+            </div>
+          </div>
         </div>
-        <div class="alert alert-danger">
-          <strong>Oh snap!</strong> Change a few things up and try submitting again.
-        </div>
-  </div>
-  <div class="part">
-    <div id="contact" class="page-header">
-        <h1>Contact</h1>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
+
+      </div>
     </div>
-    <div class="col-lg-12">
-      <form class="col-lg-5">
-        <fieldset>
-          <div class="form-group has-error has-feedback">
-            <label class="control-label" for="idError">Erreur</label>
-            <input type="text" class="form-control" id="idError">
-            <span class="glyphicon glyphicon-remove form-control-feedback"></span>
-            <span class="help-block">Corrigez l'erreur s'il vous plait</span>
+      
+      <div id="service" class="part scrollTo">
+        <div class="centrer">
+          <table>
+            <tr>
+              <td><img src="img/computer.png" alt="maintenance"/></td>
+              <td>Maintenance</td>
+            </tr>
+            <tr>
+              <td><img src="img/reg_edit.png" alt="Votre site web"/></td>
+              <td>Création de sites web</td>
+            </tr>
+            </table>
+            <table>
+            <tr>
+              <td><img src="img/adobe_photoshop.png" alt="Vos création grahique"/></td>
+              <td>Créations graphiques</td>
+            </tr>
+            <tr>
+              <td><img src="img/information.png" alt="Conseil"/></td>
+              <td>Conseils en informatique</td>
+            </tr>        
+          </table>
+        </div>
+      </div>
+  
+      <div class="part">
+
+        <div id="contact" class="page-header">
+          <h1>Contact</h1>
+        </div>
+
+        <div class="col-lg-12">
+          <div class="alert alert-success"></div>
+          <div class="alert alert-danger"></div>
+          <div>
+            <form class="col-lg-5" method='post' action='post.php'>
+              <fieldset>
+                <p>Les champs obligatoires sont indiqués avec un <span class='red'>*</span></p>
+                <div class="form-group Nom">
+                  <label class="control-label" for="Nom">Nom<span class='red'>*</span></label>
+                  <input type="text" class="form-control" id="Nom" name='nom'>
+                  <span class="glyphicon form-control-feedback"></span>
+                  <span class="help-block"></span>
+                </div>
+
+                <div class="form-group Prenom">
+                  <label class="control-label" for="Prenom">Prenom<span class='red'>*</span></label>
+                  <input type="text" class="form-control" id="Prenom" name='prenom'>
+                  <span class="glyphicon form-control-feedback"></span>
+                  <span class="help-block"></span>
+                </div>
+
+                <div class="form-group Phone">
+                  <label class="control-label" for="Phone">Téléphone</label>
+                  <input type="text" class="form-control" id="Phone" name='phone'>
+                  <span class="glyphicon form-control-feedback"></span>
+                  <span class="help-block"></span>
+                </div>
+            
+                <div class="form-group Mail">
+                  <label class="control-label" for="Mail">Email<span class='red'>*</span></label>
+                  <input type="text" class="form-control" id="Mail" name='mail'>
+                  <span class="glyphicon form-control-feedback"></span>
+                  <span class="help-block"></span>
+                </div>
+
+                <div class="form-group Message">
+                  <label class="control-label" for="Message">Message<span class='red'>*</span></label>
+                  <textarea class="form-control" id="Message" name='message'></textarea>
+                  <span class="glyphicon form-control-feedback"></span>
+                  <span class="help-block"></span>
+                </div>
+              </fieldset>
+              <button class="btn btn-default centrer" type="submit">Envoyer</button>
+            </form>
+            <a href="#top" class="col-lg-12 centrer scrollTo"><img src="img/arrow.png" alt="remonter en haut"/></a>
           </div>
-          <div class="form-group has-warning has-feedback">
-            <label class="control-label" for="idWarning">Avertissement</label>
-            <input type="text" class="form-control" id="idWarning">
-            <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
-            <span class="help-block">Il y a un problème dans la saisie</span>
-          </div>
-          <div class="form-group has-success has-feedback">
-            <label class="control-label" for="idSuccess">Réussite</label>
-            <input type="text" class="form-control" id="idSuccess">
-            <span class="glyphicon glyphicon-ok form-control-feedback"></span>
-            <span class="help-block">Saisie correcte</span>
-          </div>
-        </fieldset>
-      </form>
-    </div>
-      <a href="#top" class="col-lg-12 centrer">
-        <img src="img/arrow.png" alt="remonter en haut"/>
-      </a>
-  </div>
-</div> <!-- /container -->    
+        </div>
+      </div>
+    </div> <!-- /container -->  
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
-    <script src="bootstrap-3.1.1-dist/js/docs.min.js"></script>
-
-    <!-- Custom javascript -->
     
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <script src="bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
+    <!-- Custom javascript -->
     <script src="script.js"></script>
+    <script src="easter.js"></script> 
   </body>
 </html>

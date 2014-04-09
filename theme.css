@@ -40,6 +40,9 @@ body {
 	font-family: 'swis721_th_btthin';
 }
 
+.red {
+  color : red;
+}
 .navbar-fixed-top {
     min-width: 50%;
     max-width: 500px;
@@ -94,18 +97,30 @@ body {
 }
 
 .centrer {
+    display: block;
 		text-align: center;
     margin-right: auto;
     margin-left: auto;
 }
 
 .majusculeEnorme {
+  z-index: 500;
   padding: 15% 0 15% 0;
 	font-size: 150pt;
   color: #695341;
 }
 
-#test {
+#portofolio {
+  display: block;
+  position:absolute;
+  padding: 50px 0 0 0;
+  top:0px;
+  left : 1550px;
+  min-width: 100%;
+}
+
+#portofolio img {
+
   background: #1c5996; /* Old browsers */
   background: -moz-linear-gradient(top, #1c5996 0%, #1a4c89 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1c5996), color-stop(100%,#1a4c89)); /* Chrome,Safari4+ */
@@ -114,6 +129,13 @@ body {
   background: -ms-linear-gradient(top, #1c5996 0%,#1a4c89 100%); /* IE10+ */
   background: linear-gradient(to bottom, #1c5996 0%,#1a4c89 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c5996', endColorstr='#1a4c89',GradientType=0 ); /* IE6-9 */
+
+  /*margin : 0 auto 0 auto; */
+  max-width: 60%;
+}
+
+#service {
+  background: #FFF url("img/cameleon1.png") no-repeat center;
   display: block;
   position:absolute;
   padding: 50px 0 0 0;
@@ -121,11 +143,179 @@ body {
   left : 1550px;
   min-width: 100%;
 }
-#test img {
+
+#easter {
+  background: #FFF url("img/cameleon1.png") no-repeat center;
+  display: block;
+  position:absolute;
+  padding: 50px 0 0 0;
+  top:0px;
+  left : 1550px;
+  min-width: 100%;
+}
+
+#service img {
   /*margin : 0 auto 0 auto; */
   max-width: 60%;
 }
 
-.cameleon2 {
-  background: url("img/cameleon2.png") no-repeat center, #1c5996;
+table {
+  display: inline-block;
+  margin-top: 10%;
+}
+table tr td {
+  padding-bottom: 55px;
+    font-family: 'switzerland-medium';
+
+}
+
+#myCarousel {
+  margin-top: 2%;
+}
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+#portofolio body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+#portofolio .navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+#portofolio .navbar-wrapper .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+#portofolio .navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+#portofolio .carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+#portofolio .carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+#portofolio .carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+#portofolio .carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+#portofolio .marketing {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Center align the text within the three columns below the carousel */
+#portofolio .marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+#portofolio .marketing h2 {
+  font-weight: normal;
+}
+#portofolio .marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+#portofolio .featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+#portofolio .featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Remove the edge padding needed for mobile */
+ #portofolio  .marketing {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* Navbar positioning foo */
+  #portofolio .navbar-wrapper {
+    margin-top: 20px;
+  }
+  #portofolio .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left:  15px;
+  }
+  #portofolio .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left:  0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  #portofolio .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  #portofolio .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  #portofolio .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  #portofolio .featurette-heading {
+    margin-top: 120px;
+  }
 }

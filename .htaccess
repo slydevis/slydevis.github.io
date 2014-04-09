@@ -1,0 +1,2 @@
+RewriteCond %{HTTP_USER_AGENT} "ipod|iphone|ipad|android|palm" [NC]        
+RewriteRule (.*) http://404noob.comyr.com//mobile/index.html [R=301,L]
