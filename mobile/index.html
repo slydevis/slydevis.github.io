@@ -1,43 +1,64 @@
 <!DOCTYPE html> 
 <html> 
-    <head> 
-        <title>Page pour Mobile</title> 
-        <meta name="viewport" content="width=device-width, initial-scale=1"> 
-
-        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
-    </head> 
-<!DOCTYPE html> 
-<html> 
   <head> 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="../img/favicon.ico"> 
-    <title>Michon B Graphiste Freelance - Web et Design</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
-
-    </head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <link rel="stylesheet" href="theme-mobile.css"/>
     <body>
-      <div data-role="page" id="page1">
+      <div data-role="page" id="accueil">
         <div data-role="header">
+          <div data-role="controlgroup" data-type="horizontal">
+            <a href="#accueil" class="ui-btn ui-shadow">Acceuil</a>
+            <a href="#service" class="ui-btn ui-shadow">Service</a>
+            <a href="#portofolio" class="ui-btn ui-shadow">Portofolio</a>
+            <a href="#Contact" class="ui-btn ui-shadow">Contact</a>
+          </div>
         </div>
         <div data-role="content">
-          <a href="#page2" class="ui-btn">Show page "two"</a>          
-          <a href="#page2">Aller à la page 2 -></a>
-        </div>  
-      </div>
+          <div class="part majusculeEnorme centrer cameleon1"><span class="title">MichonB</span></div>  
+        </div>
+      </div>  
 
-      <div data-role="page" id="page2" data-theme="b">
+      <div data-role="page" id="service">
+        <div data-role="header">
+          <div data-role="controlgroup" data-type="horizontal">
+            <a href="#accueil" class="ui-btn ui-shadow">Acceuil</a>
+            <a href="#service" class="ui-btn ui-shadow">Service</a>
+            <a href="#portofolio" class="ui-btn ui-shadow">Portofolio</a>
+            <a href="#Contact" class="ui-btn ui-shadow">Contact</a>
+          </div>
+        </div>
         <div data-role="content">
-          <a href="#page1">Aller à la page 1 -></a>
-        </div> 
-      </div>
+        </div>
+      </div>  
 
+      <div data-role="page" id="portofolio">
+        <div data-role="header">
+          <div data-role="controlgroup" data-type="horizontal">
+            <a href="#accueil" class="ui-btn ui-shadow">Acceuil</a>
+            <a href="#service" class="ui-btn ui-shadow">Service</a>
+            <a href="#portofolio" class="ui-btn ui-shadow">Portofolio</a>
+            <a href="#Contact" class="ui-btn ui-shadow">Contact</a>
+          </div>
+        </div>
+        <div data-role="content">
+        </div>
+      </div>  
+
+      <div data-role="page" id="Contact">
+        <div data-role="header">
+          <div data-role="controlgroup" data-type="horizontal">
+            <a href="#accueil" class="ui-btn ui-shadow">Acceuil</a>
+            <a href="#service" class="ui-btn ui-shadow">Service</a>
+            <a href="#portofolio" class="ui-btn ui-shadow">Portofolio</a>
+            <a href="#Contact" class="ui-btn ui-shadow">Contact</a>
+          </div>
+        </div>
+        <div data-role="content">
+        </div>
+      </div>  
         <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
-      <script src=""></script>
+        <script src="script-mobile.js"></script>
     </body>
 </html>

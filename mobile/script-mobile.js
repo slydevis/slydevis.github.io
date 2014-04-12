@@ -10,7 +10,7 @@ $(document).ready(function() {
 
 	$(".cameleon1").stop().animate({opacity: 0},2000,function(){
 		$(".title").stop().fadeIn(1);
-		$(this).css({'background-image': "url('img/cameleon1.png')"}).animate({opacity: 1},{duration:2000});
+		$(this).css({'background-image': "url('../img/cameleon1.png')"}).animate({opacity: 1},{duration:2000});
 	});
 
 	function validerFormulaire() {

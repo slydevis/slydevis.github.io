@@ -1,30 +1,30 @@
 @font-face {
     font-family: 'swis721_th_btthin';
-    src: url('font/Swis_Light/swiss721bt-thin-webfont.eot');
-    src: url('font/Swis_Light/swiss721bt-thin-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/Swis_Light/swiss721bt-thin-webfont.woff') format('woff'),
-         url('font/Swis_Light/swiss721bt-thin-webfont.ttf') format('truetype'),
-         url('font/Swis_Light/swiss721bt-thin-webfont.svg#swis721_th_btthin') format('svg');
+    src: url('../font/Swis_Light/swiss721bt-thin-webfont.eot');
+    src: url('../font/Swis_Light/swiss721bt-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Swis_Light/swiss721bt-thin-webfont.woff') format('woff'),
+         url('../font/Swis_Light/swiss721bt-thin-webfont.ttf') format('truetype'),
+         url('../font/Swis_Light/swiss721bt-thin-webfont.svg#swis721_th_btthin') format('svg');
 }
 
 @font-face {
   font-family: 'switzerland-medium';
-  src: url('font/Swis_Medium/swiss721bt-medium-webfont.eot');
-  src: url('font/Swis_Medium/swiss721bt-medium-webfont.eot?#iefix') format('embedded-opentype'),
-       url('font/Swis_Medium/swiss721bt-medium-webfont.woff') format('woff'),
-       url('font/Swis_Medium/swiss721bt-medium-webfont.ttf') format('truetype'),
-       url('font/Swis_Medium/swiss721bt-medium-webfont.svg#swis721_md_btmedium') format('svg');
+  src: url('../font/Swis_Medium/swiss721bt-medium-webfont.eot');
+  src: url('../font/Swis_Medium/swiss721bt-medium-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../font/Swis_Medium/swiss721bt-medium-webfont.woff') format('woff'),
+       url('../font/Swis_Medium/swiss721bt-medium-webfont.ttf') format('truetype'),
+       url('../font/Swis_Medium/swiss721bt-medium-webfont.svg#swis721_md_btmedium') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'swis721_btroman';
-  src: url('font/Swis_Bold/swiss721bt-roman-webfont.eot');
-  src: url('font/Swis_Bold/swiss721bt-roman-webfont.eot?#iefix') format('embedded-opentype'),
-       url('font/Swis_Bold/swiss721bt-roman-webfont.woff') format('woff'),
-       url('font/Swis_Bold/swiss721bt-roman-webfont.ttf') format('truetype'),
-       url('font/Swis_Bold/swiss721bt-roman-webfont.svg#swis721_btroman') format('svg');
+  src: url('../font/Swis_Bold/swiss721bt-roman-webfont.eot');
+  src: url('../font/Swis_Bold/swiss721bt-roman-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../font/Swis_Bold/swiss721bt-roman-webfont.woff') format('woff'),
+       url('../font/Swis_Bold/swiss721bt-roman-webfont.ttf') format('truetype'),
+       url('../font/Swis_Bold/swiss721bt-roman-webfont.svg#swis721_btroman') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -47,7 +47,7 @@ body {
     min-width: 50%;
     max-width: 500px;
     margin: 0 auto 0 auto;
-    background: url("img/menu.png") repeat;
+    background: url("../img/menu.png") repeat;
     border-radius: 0 0 10px 10px;
     border: 0px;
 }
@@ -79,7 +79,7 @@ body {
 }
 
 .cameleon1 {
-  background: url("img/cameleon2.png") no-repeat center;
+  background: url("../img/cameleon2.png") no-repeat center;
 }
 
 .container {
@@ -135,7 +135,7 @@ body {
 }
 
 #service {
-  background: #FFF url("img/cameleon1.png") no-repeat center;
+  background: #FFF url("../img/cameleon1.png") no-repeat center;
   display: block;
   position:absolute;
   padding: 50px 0 0 0;
@@ -145,7 +145,7 @@ body {
 }
 
 #easter {
-  background: #FFF url("img/cameleon1.png") no-repeat center;
+  background: #FFF url("../img/cameleon1.png") no-repeat center;
   display: block;
   position:absolute;
   padding: 50px 0 0 0;
