@@ -45,13 +45,13 @@ $objet = new StdClass();
 if ((!empty($nom)) && (!empty($prenom)) && verifPhone($phone) && (!empty($message)) && verifMail($mail)) {
 	$objet->message
 		= "Votre message à bien été transmis.";
-	$objet->result = true;
+	$objet->resultat = true;
 } else {
 	$objet->message = "Game Over votre ordinateur s'auto détruira dans 5sec";
-	$objet->result = false;
+	$objet->resultat = false;
 }
 
-$mailAdmin = 'slydevis@hotmail.fr'; // Déclaration de l'adresse de destination.
+$mailAdmin = 'bmichon@free.fr'; // Déclaration de l'adresse de destination.
 if (!preg_match("#^[a-z0-9._-]+@(hotmail|live|msn).[a-z]{2,4}$#", $mailAdmin)) // On filtre les serveurs qui rencontrent des bogues.
 {
 	$passage_ligne = "\r\n";

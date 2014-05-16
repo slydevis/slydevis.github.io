@@ -1,64 +1,159 @@
-<!DOCTYPE html> 
+﻿<!DOCTYPE html> 
 <html> 
   <head> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
     <link rel="stylesheet" href="theme-mobile.css"/>
     <body>
-      <div data-role="page" id="accueil">
+      <div data-role="page" id="one">
         <div data-role="header">
-          <div data-role="controlgroup" data-type="horizontal">
-            <a href="#accueil" class="ui-btn ui-shadow">Acceuil</a>
-            <a href="#service" class="ui-btn ui-shadow">Service</a>
-            <a href="#portofolio" class="ui-btn ui-shadow">Portofolio</a>
-            <a href="#Contact" class="ui-btn ui-shadow">Contact</a>
-          </div>
+          <div data-role="navbar" class="custom-navbar">
+          <ul>
+            <li><a href="#one" class="ui-btn ui-shadow">Acceuil</a></li>
+            <li><a href="#two" class="ui-btn ui-shadow">Service</a></li>
+            <li><a href="#three" class="ui-btn ui-shadow">Portofolio</a></li>
+            <li><a href="#four" class="ui-btn ui-shadow">Contact</a></li>
+          </ul>
+           </div>
         </div>
         <div data-role="content">
           <div class="part majusculeEnorme centrer cameleon1"><span class="title">MichonB</span></div>  
         </div>
       </div>  
-
-      <div data-role="page" id="service">
+      <div data-role="page" id="two">
         <div data-role="header">
-          <div data-role="controlgroup" data-type="horizontal">
-            <a href="#accueil" class="ui-btn ui-shadow">Acceuil</a>
-            <a href="#service" class="ui-btn ui-shadow">Service</a>
-            <a href="#portofolio" class="ui-btn ui-shadow">Portofolio</a>
-            <a href="#Contact" class="ui-btn ui-shadow">Contact</a>
-          </div>
+          <div data-role="navbar" class="custom-navbar">
+          <ul>
+            <li><a href="#one" class="ui-btn ui-shadow">Acceuil</a></li>
+            <li><a href="#two" class="ui-btn ui-shadow">Service</a></li>
+            <li><a href="#three" class="ui-btn ui-shadow">Portofolio</a></li>
+            <li><a href="#four" class="ui-btn ui-shadow">Contact</a></li>
+          </ul>
+           </div>
         </div>
         <div data-role="content">
+          <div class="centrer">
+            <table data-role="table" class="ui-responsive">
+            <tr>
+              <td><img src="../img/computer.png" alt="maintenance"/></td>
+              <td>Maintenance</td>
+            </tr>
+            <tr>
+              <td><img src="../img/reg_edit.png" alt="Votre site web"/></td>
+              <td>Création de sites web</td>
+            </tr>
+            </table>
+            <table data-role="table" class="ui-responsive">
+            <tr>
+              <td><img src="../img/adobe_photoshop.png" alt="Vos création grahique"/></td>
+              <td>Créations graphiques</td>
+            </tr>
+            <tr>
+              <td><img src="../img/information.png" alt="Conseil"/></td>
+              <td>Conseils en informatique</td>
+            </tr>        
+          </table>
+        </div> 
         </div>
       </div>  
-
-      <div data-role="page" id="portofolio">
+      <div data-role="page" id="three">
         <div data-role="header">
-          <div data-role="controlgroup" data-type="horizontal">
-            <a href="#accueil" class="ui-btn ui-shadow">Acceuil</a>
-            <a href="#service" class="ui-btn ui-shadow">Service</a>
-            <a href="#portofolio" class="ui-btn ui-shadow">Portofolio</a>
-            <a href="#Contact" class="ui-btn ui-shadow">Contact</a>
-          </div>
+          <div data-role="navbar" class="custom-navbar">
+          <ul>
+            <li><a href="#one" class="ui-btn ui-shadow">Acceuil</a></li>
+            <li><a href="#two" class="ui-btn ui-shadow">Service</a></li>
+            <li><a href="#three" class="ui-btn ui-shadow">Portofolio</a></li>
+            <li><a href="#four" class="ui-btn ui-shadow">Contact</a></li>
+          </ul>
+           </div>
         </div>
         <div data-role="content">
+   <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="../img/img.png" data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide">
         </div>
-      </div>  
-
-      <div data-role="page" id="Contact">
+        <div class="item">
+          <img src="../img/img2.png" data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide">
+        </div>
+        <div class="item">
+          <img src="../img/img3.png" data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide">
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
+        </div>
+      </div>
+              <div data-role="page" id="four">
         <div data-role="header">
-          <div data-role="controlgroup" data-type="horizontal">
-            <a href="#accueil" class="ui-btn ui-shadow">Acceuil</a>
-            <a href="#service" class="ui-btn ui-shadow">Service</a>
-            <a href="#portofolio" class="ui-btn ui-shadow">Portofolio</a>
-            <a href="#Contact" class="ui-btn ui-shadow">Contact</a>
-          </div>
+          <div data-role="navbar" class="custom-navbar">
+          <ul>
+            <li><a href="#one" class="ui-btn ui-shadow">Acceuil</a></li>
+            <li><a href="#two" class="ui-btn ui-shadow">Service</a></li>
+            <li><a href="#three" class="ui-btn ui-shadow">Portofolio</a></li>
+            <li><a href="#four" class="ui-btn ui-shadow">Contact</a></li>
+          </ul>
+           </div>
         </div>
         <div data-role="content">
+         <div id="contact" class="page-header">
+          <h1>Contact</h1>
         </div>
+
+        <div class="col-lg-12">
+          <div class="alert alert-success"></div>
+          <div class="alert alert-danger"></div>
+          <div>
+            <form class="col-lg-5" method='post' action='post.php'>
+              <fieldset>
+                <p>Les champs obligatoires sont indiqués avec un <span class='red'>*</span></p>
+                <div class="ui-field-contain form-group Nom">
+                  <label class="control-label" for="Nom">Nom<span class='red'>*</span></label>
+                  <input type="text" class="form-control" id="Nom" name='nom'>
+                  <span class="glyphicon form-control-feedback"></span>
+                  <span class="help-block"></span>
+                </div>
+
+                <div class="ui-field-contain form-group Prenom">
+                  <label class="control-label" for="Prenom">Prenom<span class='red'>*</span></label>
+                  <input type="text" class="form-control" id="Prenom" name='prenom'>
+                  <span class="glyphicon form-control-feedback"></span>
+                  <span class="help-block"></span>
+                </div>
+
+                <div class="ui-field-contain form-group Phone">
+                  <label class="control-label" for="Phone">Téléphone</label>
+                  <input type="text" class="form-control" id="Phone" name='phone'>
+                  <span class="glyphicon form-control-feedback"></span>
+                  <span class="help-block"></span>
+                </div>
+            
+                <div class="ui-field-contain form-group Mail">
+                  <label class="control-label" for="Mail">Email<span class='red'>*</span></label>
+                  <input type="text" class="form-control" id="Mail" name='mail'>
+                  <span class="glyphicon form-control-feedback"></span>
+                  <span class="help-block"></span>
+                </div>
+
+                <div class="ui-field-contain form-group Message">
+                  <label class="control-label" for="Message">Message<span class='red'>*</span></label>
+                  <textarea class="form-control" id="Message" name='message'></textarea>
+                  <span class="glyphicon form-control-feedback"></span>
+                  <span class="help-block"></span>
+                </div>
+              </fieldset>
+              <button data-role="none" class="ui-btn ui-btn-inline btn btn-default centrer" type="submit">Envoyer</button>
+            </form>
+          </div>
+        </div>
+      </div>
       </div>  
         <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+        <script src="../script.js"></script>
         <script src="script-mobile.js"></script>
     </body>
 </html>

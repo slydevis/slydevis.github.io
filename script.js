@@ -1,3 +1,5 @@
+// TODO : resoudre le formulaire 
+
 $(document).ready(function() {
 
 	$("#portofolio").hide();
@@ -8,10 +10,17 @@ $(document).ready(function() {
 
 	$("button:contains('Envoyer')").attr("disabled","disabled").addClass( 'ui-state-disabled' ); // Désactive Le bouton envoyer
 
+	// Effet fondu du nouvelle background
+
 	$(".cameleon1").stop().animate({opacity: 0},2000,function(){
 		$(".title").stop().fadeIn(1);
+
+		// La fonction css() permet de modifier le css d'un objet
+		
 		$(this).css({'background-image': "url('img/cameleon1.png')"}).animate({opacity: 1},{duration:2000});
 	});
+
+	// Fonction qui permet de vérifier tous le champs du formulaire et d'activé le bouton envoyer qui si c'est tous bon
 
 	function validerFormulaire() {
 
@@ -21,13 +30,22 @@ $(document).ready(function() {
 		var champsMail = $('.Mail .glyphicon').hasClass('glyphicon-ok');
 		var champsMess = $('.Message .glyphicon').hasClass('glyphicon-ok');
 
+		// La fonction removeAttr permet de rajouté un attribut à une balise
+		// La fonction removeClass permet d'enlever une class à une balise
+
 		if(champsNom && champsPrenom && (!champsPhone) && champsMail && champsMess)
 			$("button:contains('Envoyer')").removeAttr("disabled").removeClass( 'ui-state-disabled' );
 		else {
+
+			// La fonction hasClass permet de vérifier si la balise possède bien la class
+			// La fonction addClass permet d'ajouté une classe à l'élèment sélectionné 
+
 			if(!$("button:contains('Envoyer')").attr("disabled","disabled").hasClass('ui-state-disabled')) 
 				$("button:contains('Envoyer')").attr("disabled","disabled").addClass( 'ui-state-disabled' );
 		}
 	}
+
+	//  Vérifie le champs Nom lorsqu'on pert le 'focus'
 
 	$("#Nom").blur(function() {
 		if($(this).val() == "") {
@@ -47,6 +65,8 @@ $(document).ready(function() {
   		validerFormulaire();
 	});
 
+	//  Vérifie le champs Prénom lorsqu'on pert le 'focus'
+
 	$("#Prenom").blur(function() {
 		if($(this).val() == "") {
 			$(this).parent(".form-group").removeClass('has-success has-warning');
@@ -65,6 +85,8 @@ $(document).ready(function() {
   		validerFormulaire();
 	});
 
+	//  Vérifie le champs Téléphone lorsqu'on pert le 'focus'
+
 	$("#Phone").blur(function() {
 		if((!$(this).val().match("^0[1-68]([-. ]?[0-9]{2}){4}$"))) {
 			$(this).parent(".form-group").removeClass('has-success has-warning');
@@ -82,6 +104,8 @@ $(document).ready(function() {
 		}
   		validerFormulaire();
 	});
+
+	//  Vérifie le champs Email lorsqu'on pert le 'focus'
 
 	$("#Mail").blur(function() {
 		
@@ -102,6 +126,8 @@ $(document).ready(function() {
   		validerFormulaire();
 	});
 
+	//  Vérifie le champs Message lorsqu'on pert le 'focus'
+
 	$("#Message").blur(function() {
 		if($(this).val() == "") {
 			$(this).parent(".form-group").removeClass('has-success has-warning');
@@ -120,9 +146,9 @@ $(document).ready(function() {
   		validerFormulaire();
 	});
  	
+ 	// Cette fonction permet de faire apparaitre/disparaitre une partie (class=part)
+ 	
  	function slide(obj, sens) {
- 		var object = $(obj);
- 		var toPorto = $('#portofolio');
  		$(obj).show();
  		if(sens) {
  			$(obj).animate({"left" : "-=1550px"}, "slow");
@@ -134,6 +160,9 @@ $(document).ready(function() {
  	}
 
 	var sensPorto = true;
+
+	// Lorsqu'on clique sur le bouton Portofolio alors on apparait la partie et on disparait la partie qui peut être présente
+
  	$('#portofolio-menu').click(function() {
  		if(!sensService) {
  			$('#service').hide();
@@ -146,6 +175,9 @@ $(document).ready(function() {
  	});
 
  	var sensService = true;
+
+	// Lorsqu'on clique sur le bouton Service alors on apparait la partie et on disparait la partie qui peut être présente
+
  	$('#service-menu').click(function() {
  		if(!sensPorto) {
  			$('#portofolio').hide();
@@ -156,6 +188,8 @@ $(document).ready(function() {
  		sensService = (!sensService);
  		return false;
  	});
+
+	// Lorsqu'on clique sur un bouton Contact alors on cache tous les parties présente sur la page
 
  	$('#acceuil, a[href=#contact]').click(function() {
  		$('.title').show();
@@ -172,6 +206,8 @@ $(document).ready(function() {
  		return false;
  	});
 
+ 	// Lorsqu'on clique sur un bouton du menu alors on gère quelle est le bouton active (pour savoir où l'utilisateur ce trouve)
+
 	$('ul.navbar-nav li a').click(function () {
 		if(!$(this).parent('li.active').hasClass("active")) {
 			$('ul.navbar-nav li.active').removeClass('active');
@@ -184,36 +220,40 @@ $(document).ready(function() {
 		return false;
 	});
 
- 	
- 	$('.scrollTo').click( function() { // Au clic sur un élément
-      var page = $(this).attr('href'); // Page cible
-      var speed = 750; // Durée de l'animation (en ms)
-      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+ 	// Permet le passage d'une ancre à une autre de façon fluide
 
-      return false;
+ 	$('.scrollTo').click( function() {
+
+ 		// La fonction attr() permet de récupérer le contenu de la valeur de href dans ce cas là
+    	
+    	var page = $(this).attr('href');
+    	
+    	// La fonction offset permet de recupérer la position de l'objet possdans la class srollTo
+
+      	$('html, body').animate( { scrollTop: $(page).offset().top }, "slow");
+      	return false;
     });
 
-    $('form').submit(function() {
+
+
+ 	// Lorsqu'on envoie le formulaire 
+
+	$("button:contains('Envoyer')").click(function() {
 		$("#Nom").attr("disabled","disabled");
 		$("#Prenom").attr("disabled","disabled");
 		$("#Phone").attr("disabled","disabled");
 		$("#Mail").attr("disabled","disabled");
-		$("#Message").attr("disabled","disabled");
-		$.post($(this).attr('action'),$(this).serialize(),function(texte){
-			$(':button:contains(\'Envoyer\')').fadeOut(200);
-		});
-		
-		$.ajax({
-	        type: $(this).attr("method"),
-	        url: $(this).attr("action"),
-	        data: $(this).serialize(),
-	        success: OnSuccess,
-			error: OnError
-		});
+		$("#Message").attr("disabled","disabled");		
+	});
 
-		function OnSuccess(result) {
-			var message = result.message;
-			var resultat = result.result;
+	$("#formulaire").submit(function() {
+	$.ajax({
+		type: $(this).attr("method"), 
+		data: $(this).serialize(), 
+		url: $(this).attr('action'),
+		success: function(data) {
+			var message = data.message;
+			var resultat = data.resultat;
 			$('form').fadeOut('slow');
 			if(resultat) {
 				$('.alert.alert-success').fadeIn('slow');
@@ -224,14 +264,13 @@ $(document).ready(function() {
 				$('.alert.alert-danger').fadeIn('slow');
 				$('.alert.alert-danger').html(message);
 			}
-		}
-
-		function OnError(result) {
+		},
+		error: function(data) {
 			$('form').fadeOut('slow');
-			$('.alert.alert-danger').fadeIn('slow');
-			$('.alert.alert-danger').html("Une erreur c'est produite veuillez actualiser la page et recommencer");
+	 		$('.alert.alert-danger').fadeIn('slow');
+		 	$('.alert.alert-danger').html("Une erreur c'est produite veuillez actualiser la page et recommencer");
 		}
-		
+	});
 		return false;
-	})
+	});
 });

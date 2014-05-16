@@ -36,50 +36,52 @@ html, body {
   text-shadow: 1px 1px 0 #fff;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 body {
 	font-family: 'swis721_th_btthin';
+}
+
+.custom-navbar ul li a {
+background: #695341; /* Old browsers */
+background: -moz-linear-gradient(top, #695341 0%, #5e493a 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#695341), color-stop(100%,#5e493a)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #695341 0%,#5e493a 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #695341 0%,#5e493a 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #695341 0%,#5e493a 100%); /* IE10+ */
+background: linear-gradient(to bottom, #695341 0%,#5e493a 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#695341', endColorstr='#5e493a',GradientType=0 ); /* IE6-9 */ 
+color : #FFF !important;
+font-family: "swis721_th_btthin";
+text-shadow : none !important;
+}
+
+.custom-navbar ul li a.ui-btn-active {
+background: #e86b22; /* Old browsers */
+background: -moz-linear-gradient(top, #e86b22 0%, #dd6321 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e86b22), color-stop(100%,#dd6321)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #e86b22 0%,#dd6321 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #e86b22 0%,#dd6321 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #e86b22 0%,#dd6321 100%); /* IE10+ */
+background: linear-gradient(to bottom, #e86b22 0%,#dd6321 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e86b22', endColorstr='#dd6321',GradientType=0 ); /* IE6-9 */
+color : #FFF !important;
+font-family: "swis721_th_btthin";
+text-shadow : none !important;
 }
 
 .red {
   color : red;
 }
-.navbar-fixed-top {
-    min-width: 50%;
-    max-width: 500px;
-    margin: 0 auto 0 auto;
-    background: url("../img/menu.png") repeat;
-    border-radius: 0 0 10px 10px;
-    border: 0px;
-}
-
-.navbar-header .navbar-brand{
-  color: #FFF;
-}
-
-.navbar-header .navbar-brand:hover{
-  color: #E86B22;
-}
-
-.navbar-collapse .nav .active a{
-  background: #E86B22;
-  color: #695341;
-}
-
-.navbar-collapse .nav .active a:hover{
-  background: #4D4D4F;
-  color: #FFF;
-}
-
-.navbar-collapse .nav li a{
-    color: #FFF;
-}
-
-.navbar-collapse .nav li a:hover{
-    color: #E86B22;
-}
 
 .cameleon1 {
+  max-width: 100%;
+  height: auto;
   background: url("../img/cameleon2.png") no-repeat center;
+  background-size: contain;
 }
 
 .container {
@@ -88,7 +90,6 @@ body {
 }
 
 .part { 
-  /*background: #000;*/
   margin-bottom: 5px;
   display: block;
   padding: 20px;
@@ -105,8 +106,8 @@ body {
 
 .majusculeEnorme {
   z-index: 500;
-  padding: 15% 0 15% 0;
-	font-size: 150pt;
+  padding: 50% 0 50% 0;
+	font-size: 500% ;
   color: #695341;
 }
 
@@ -129,22 +130,10 @@ body {
   background: -ms-linear-gradient(top, #1c5996 0%,#1a4c89 100%); /* IE10+ */
   background: linear-gradient(to bottom, #1c5996 0%,#1a4c89 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c5996', endColorstr='#1a4c89',GradientType=0 ); /* IE6-9 */
-
-  /*margin : 0 auto 0 auto; */
   max-width: 60%;
 }
 
 #service {
-  background: #FFF url("../img/cameleon1.png") no-repeat center;
-  display: block;
-  position:absolute;
-  padding: 50px 0 0 0;
-  top:0px;
-  left : 1550px;
-  min-width: 100%;
-}
-
-#easter {
   background: #FFF url("../img/cameleon1.png") no-repeat center;
   display: block;
   position:absolute;
@@ -163,10 +152,10 @@ table {
   display: inline-block;
   margin-top: 10%;
 }
+
 table tr td {
   padding-bottom: 55px;
-    font-family: 'switzerland-medium';
-
+  font-family: 'switzerland-medium';
 }
 
 #myCarousel {
@@ -230,7 +219,6 @@ table tr td {
   display: block;
   margin-left:  auto;
   margin-right: auto;
-
   min-width: 100%;
   height: 500px;
 }
@@ -329,4 +317,13 @@ table tr td {
   #portofolio .featurette-heading {
     margin-top: 120px;
   }
+}
+
+.ui-input-text, .ui-input-search {
+  border-style: none;
+
+}
+
+.ui-btn, label.ui-btn {
+  border-style: none;
 }
